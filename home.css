@@ -245,7 +245,7 @@ body{
 
 
 .Pcard2{
-    background-image: url('/images/cyber.jpg');
+    background-image: url('images/cyber.jpg');
     
     background-size: cover;
     margin: 10px;
@@ -257,7 +257,7 @@ body{
 
 
 .Pcard3{
-    background-image: url('/images/iot.webp');
+    background-image: url('images/iot.webp');
     
     background-size: cover;
     margin: 10px;
