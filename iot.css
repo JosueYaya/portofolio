@@ -1,0 +1,167 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+:root{
+   
+    --secondary-color:#005A9C;
+    --background-color:white;
+    --text-color:#181818;
+   
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--background-color) ;
+    color: var(--primary-color);
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    
+} 
+p{
+    
+    color: #181818;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    height:100%;
+    width:100%;
+
+}
+.content{
+    max-width:60%;
+    margin-left: 20%;
+    height: 100%; 
+}
+.iot {
+    padding: 0 9%;
+    margin: 2rem 0;
+    align-items: center;
+    text-align: center; /* Add this line to center-align text */
+}
+
+.iot p {
+    max-width: 700px;
+    color: black; /* Set the text color */
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.0rem;
+}
+
+.iot h1 {
+    text-align: center;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+}
+
+.iot img{
+    max-width:90%;
+    width: 50rem;
+    height: 400px;
+    text-align: center;
+    margin-left: 3rem;
+    z-index: 1; 
+}
+.elements{
+    padding: 0% 9%;
+}
+.elements h1{
+    text-align:center;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+}
+
+
+.elements ul li{
+   
+    margin: 2.6rem;
+    position: relative;
+    font-weight: bold;
+}
+.apply{
+    padding: 0 9%;
+
+}
+
+.apply h1{
+    text-align:center;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+
+}
+.apply .ab1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 2.6rem;
+
+}
+.apply .ab1 img{
+    width: 20rem;
+    height: 20em;
+    margin-right: 2rem;
+  
+
+}
+.apply .ab1 p{
+    line-height: 1.1;
+    font-size: 1.4rem;
+    max-width: 400px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 30vh; /* Set the height to 100% of the viewport height */
+    background-color: #d3d3d3;
+    color: black;
+    top: 0%;
+    margin-left: 30px;
+    padding: 20px;
+    box-sizing: border-box; 
+    border-radius: 10px;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}

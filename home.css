@@ -1,0 +1,316 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+:root{
+   
+    --secondary-color:#005A9C;
+    --background-color:white;
+    --text-color:black;
+   
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--background-color) ;
+   
+}
+.header {
+    position: absolute;
+    overflow: hidden;
+    background-color:transparent;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 2rem 7%;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+
+}
+.logo {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    
+
+}
+
+.nav a{
+    font-size: 1.7rem;
+    color:black;
+    margin-left: 2.5rem;
+    text-decoration: none;  
+    transition: .3s;
+    font-size: bold;
+    
+
+}
+.nav a:hover,.nav a.active{
+    color: var(--secondary-color);
+} 
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+
+}
+
+ #home{
+    height: 100vh;
+    padding: 10rem 9% 2rem;
+    
+    
+}
+.hero{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 9%;
+    height: auto;
+    /* background: url('/images/jojo.jpg') no-repeat;
+    background-size: contain;
+    background-position: top right;
+     */
+
+    
+    
+
+    
+}
+.hero-img img{
+    width: 100%; /* Set the width to 100% to fill the container */
+    /* Set a maximum width if needed */
+    /* Maintain the aspect ratio */
+    
+     border: 0.2rem solid var(--secondary-color);
+     object-fit: contain;
+     height: 50rem;
+
+} 
+.p{
+    max-width: 500px;
+    line-height: 1.6;
+}
+.p h1{
+
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+
+.p  p{
+    
+    font-size: 1.2rem;
+    margin: 2rem 0 4rem;
+}
+
+
+
+
+.about {
+    
+   padding-bottom: 6rem;
+   /* background-color:#d3d3d3;; */
+}
+.heading{
+    font-size: 5rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+    /* color: var(--secondary-color); */
+}
+.about-content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin:2rem 0 3rem;
+    max-width: 800px;
+    
+
+
+}
+
+
+
+#contact{
+    padding: 5rem;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+
+#contact .form{
+    padding: 6rem;
+    margin: 10px;
+    background-color: #B8B8B8;
+    min-height: fit-content;
+    height: auto;
+    width: 35rem;
+    border: .2rem solid black;
+    border-radius: 25px;
+    
+}
+.form h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    top: 3px;
+   
+
+}
+.form input{
+    padding: 2rem;
+    margin: 5px;
+    
+    width:auto;
+   
+    margin-left: 0%;
+    
+}
+.form textarea{
+    padding: 2rem;
+    margin: 5px;
+    width: auto;
+    
+    margin-left: 0%;
+}
+.form button{
+    padding: 2rem;
+    margin: 5px;
+    margin-bottom: 6px;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 999px;
+    border: .2rem solid #270F43 ;
+    background-color: white;
+    display: inline-block;
+    color: black;
+    font-size: 1rem;
+    margin-left: 0%;
+
+}
+
+
+
+
+#projects{
+   margin: 7px;
+    padding: 7px;
+}
+.project_cards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+    padding: 7px;
+    
+   
+    
+
+}
+.project_cards h3 a{
+    font-size: 1.9rem;
+    margin: 5px;
+    color: #B8B8B8;
+
+}
+#projects .heading{
+    color: black;
+
+}
+
+
+
+
+
+.Pcard2{
+    background-image: url('/images/cyber.jpg');
+    
+    background-size: cover;
+    margin: 10px;
+    width: 400px;
+    min-height: 350px;
+
+}
+
+
+
+.Pcard3{
+    background-image: url('/images/iot.webp');
+    
+    background-size: cover;
+    margin: 10px;
+    width: 400px;
+    min-height: 350px;
+    
+
+}
+
+.navy {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #B8B8B8;
+}
+
+.navy.show-nav {
+    display: flex;
+}
+
+.navy a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .hero-img{
+        display: none;
+    }
+
+}
+
+
+
+
+
+ 

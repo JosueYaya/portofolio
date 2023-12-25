@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity</title>
+    <link rel="stylesheet" href="cyber.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Cybersecurity</h1>
+            <ul>
+                <li><a href="#proj1">Password Manager</a></li>
+                <li><a href="#proj2">Traceroute</a></li>
+                <li><a href="#proj3">Network</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>CyberSecurity Portfolio</h1>
+            <p>Here is a summary of my cybersecurity project</p>
+            <div class="porto">
+                <div class="proj"id="proj1">
+                    <h1>Password Manager</h1>
+                    <p>Here I developed a password manager tool using Python</p>
+                    <div class="image">
+                        <img src="images/password1.jpg" alt="Password Manager Image" onclick="openModal('images/password1.jpg')">
+                        <img src="images/password2.jpg" alt="Password Manager Image" onclick="openModal('images/password2.jpg')">
+                    </div>
+                </div>
+                <div class="proj" id="proj2">
+                    <h1>Traceroute tool Analysis</h1>
+                    <p>Here I developed Traceroute manager tool </p>
+                    <div class="img">
+                        <img src="images/trace1.jpg" alt="traceroute" onclick="openModal('images/trace1.jpg')"/>
+                        <img src="images/trace2.jpg" alt="traceroute" onclick="openModal('images/trace2.jpg')"/>
+                    </div>
+                </div>
+                <div class="proj" id="proj3">
+                    <h1>Network Troubleshooting</h1>
+                    <p>Using Network ifconfig in terminal </p>
+                    <div>
+                        <img src="images/IfConfig.jpg" alt="traceroute" onclick="openModal('images/IfConfig.jpg')"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal HTML Structure -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImage = document.getElementById('modalImage');
+
+            modal.style.display = 'block';
+            modalImage.src = imageSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
